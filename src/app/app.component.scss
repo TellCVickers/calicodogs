@@ -1,0 +1,25 @@
+@import '../../node_modules/bootstrap/scss/bootstrap';
+@import '../../node_modules/bootstrap/scss/variables';
+@import '../../node_modules/bootstrap/scss/mixins';
+
+footer {
+    padding-bottom: 1rem;
+    text-align: center;
+    width: 100%;
+
+    .social-logo { 
+        width: 3rem;
+        
+    }
+}
+
+.main {
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    width: 66%;
+
+    @include media-breakpoint-down(xl) { 
+        width: 100%;
+    }
+}

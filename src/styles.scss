@@ -1,0 +1,13 @@
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+:root {
+    --background-color: #121313;
+  }
+
+/* You can add global styles to this file, and also import other style files */
+body {
+    background-color: var(--background-color);
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    margin: auto;
+}

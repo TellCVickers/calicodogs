@@ -1,0 +1,42 @@
+@import '../../../../node_modules/bootstrap/scss/bootstrap';
+@import '../../../../node_modules/bootstrap/scss/variables';
+@import '../../../../node_modules/bootstrap/scss/mixins';
+
+.bg-body-tertiary {
+    background-color: var(--background-color) !important;
+}
+
+.nav-grid {
+    @include media-breakpoint-down(lg) { 
+        display: grid;
+        grid-template-columns: auto auto;
+
+        .header-logo {
+            max-width: 60%;
+        }
+
+        .navbar-container {
+            position: absolute;
+            right: 1rem;
+            text-align: center;
+            top: 1.2rem;
+        }
+    }
+}
+
+.navbar-nav {
+    .nav-link {
+        color: white !important;
+
+        &.active {
+            color: #c89343 !important;
+            font-weight: bold;
+        }
+    }
+
+    @include media-breakpoint-down(lg) { 
+        .nav-link {
+            text-align: center;
+        }
+    }
+}

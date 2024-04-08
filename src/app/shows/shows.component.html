@@ -1,0 +1,13 @@
+<ul *ngIf="shows.length">
+    <li *ngFor="let show of shows; let i = index;" class="show-detail">
+        <span class="fw-bold">{{show.venue}}</span><br>
+        <span *ngIf="show.location" style="white-space: pre-line">{{show.location}}<br></span>
+        <span *ngIf="show.otherBands">{{show.otherBands}}<br></span>
+        <span>{{show.date | date: 'MM/dd/yyyy'}}</span><br>
+        <span>{{show.startTime}}</span><br>
+        <span *ngIf="show.doorTime">Doors open at {{show.doorTime}}<br></span>
+        <hr *ngIf="i !== shows.length - 1">
+    </li>
+</ul>
+<p *ngIf="!shows.length">More shows to be announced soon!</p>
+
