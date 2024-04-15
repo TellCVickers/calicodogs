@@ -11,6 +11,12 @@
     width: 100%;
 }
 
+@include media-breakpoint-down(sm) { 
+    .banner {
+        min-height: 200px;
+    }
+}
+
 .banner-header {
     color: white;
     font-size: 4rem;

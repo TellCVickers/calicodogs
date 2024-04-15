@@ -24,6 +24,12 @@
     }
 }
 
+@include media-breakpoint-down(lg) { 
+    .navbar {
+        --bs-navbar-padding-y: 0;
+    }
+}
+
 .navbar-nav {
     .nav-link {
         color: white !important;
@@ -38,5 +44,9 @@
         .nav-link {
             text-align: center;
         }
+    }
+
+    .navbar-toggler-icon {
+        color: white !important;
     }
 }

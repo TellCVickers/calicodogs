@@ -5,7 +5,7 @@ import { ShowsComponent } from './shows/shows.component';
 
 export const routes: Routes = [
     { path: '', pathMatch: 'full', redirectTo: 'bio' },
-    { path: 'bio', component: BioComponent },
-    { path: 'contact', component: ContactComponent },
-    { path: 'shows', component: ShowsComponent }
+    { path: 'bio', title: 'Bio', component: BioComponent },
+    { path: 'contact', title: 'Contact', component: ContactComponent },
+    { path: 'shows', title: 'Shows', component: ShowsComponent }
 ];
