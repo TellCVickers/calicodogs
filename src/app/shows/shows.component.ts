@@ -20,10 +20,8 @@ interface IShow {
 })
 export class ShowsComponent {
   shows: IShow[] = [{
-    venue: 'The Rose Bowl',
-    otherBands: 'with Outside Eliza, No Jane, and Worse!',
-    date: new Date(2024, 3, 12),
-    doorTime: '6:15pm',
-    startTime: '7pm',
+    venue: 'Millvale Music Festival at the Double L Bar',
+    date: new Date(2024, 4, 18),
+    startTime: '1pm',
   }];
 }
