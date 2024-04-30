@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { BIO_CONTENT } from './bio-content.constants';
 
 @Component({
   selector: 'app-bio',
@@ -8,5 +9,5 @@ import { Component } from '@angular/core';
   styleUrl: './bio.component.scss'
 })
 export class BioComponent {
-
+  content = BIO_CONTENT;
 }

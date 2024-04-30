@@ -1,11 +1,10 @@
-import { BioComponent } from './bio/bio.component';
-import { ContactComponent } from './contact/contact.component';
 import { Routes } from '@angular/router';
-import { ShowsComponent } from './shows/shows.component';
 
 export const routes: Routes = [
-    { path: '', pathMatch: 'full', redirectTo: 'bio' },
-    { path: 'bio', title: 'Bio', component: BioComponent },
-    { path: 'contact', title: 'Contact', component: ContactComponent },
-    { path: 'shows', title: 'Shows', component: ShowsComponent }
+    { path: '', pathMatch: 'full', redirectTo: 'press-kit' },
+    { path: 'epk', pathMatch: 'full', redirectTo: 'press-kit' },
+    { path: 'bio', title: 'Bio', loadComponent: () => import('./bio/bio.component').then(mod => mod.BioComponent) },
+    { path: 'contact', title: 'Contact', loadComponent: () => import('./contact/contact.component').then(mod => mod.ContactComponent) },
+    { path: 'shows', title: 'Shows', loadComponent: () => import('./shows/shows.component').then(mod => mod.ShowsComponent) },
+    { path: 'press-kit', title: 'Press Kit', loadComponent: () => import('./press-kit/press-kit.component').then(mod => mod.PressKitComponent)}
 ];

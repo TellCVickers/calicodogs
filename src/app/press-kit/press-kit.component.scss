@@ -1,0 +1,46 @@
+@import '../../../node_modules/bootstrap/scss/bootstrap';
+@import '../../../node_modules/bootstrap/scss/variables';
+@import '../../../node_modules/bootstrap/scss/mixins';
+
+h2 {
+    margin-bottom: 2rem;
+}
+
+hr {
+    margin: 2rem auto;
+    width: 25%;
+}
+
+.epk-banner {
+    background-image: url('/assets/epk_banner.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 0;
+    padding-top: 66.64%;
+}
+
+.banner-header {
+    color: white;
+    font-size: 4rem;
+    margin: auto;
+    position: absolute;
+    text-align: center;
+    text-shadow: 2px 2px 4px black;
+    top: 6rem;  
+    width: 100%;
+
+    @include media-breakpoint-down(md) {
+        font-size: 2rem;
+        top: 3rem;
+    }
+}
+
+.epk-content {
+    margin: 0 auto;
+    width: 60%;
+
+    @include media-breakpoint-down(md) {
+        width: 80%;
+    }
+}
