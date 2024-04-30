@@ -23,16 +23,14 @@ hr {
 .banner-header {
     color: white;
     font-size: 4rem;
-    margin: auto;
+    margin: 6rem auto 3rem;
     position: absolute;
     text-align: center;
     text-shadow: 2px 2px 4px black;
-    top: 6rem;  
     width: 100%;
 
     @include media-breakpoint-down(md) {
         font-size: 2rem;
-        top: 3rem;
     }
 }
 
