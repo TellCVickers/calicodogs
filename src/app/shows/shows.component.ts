@@ -19,9 +19,5 @@ interface IShow {
   styleUrl: './shows.component.scss'
 })
 export class ShowsComponent {
-  shows: IShow[] = [{
-    venue: 'Millvale Music Festival at the Double L Bar',
-    date: new Date(2024, 4, 18),
-    startTime: '1pm',
-  }];
+  shows: IShow[] = [];
 }
