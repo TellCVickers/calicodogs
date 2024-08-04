@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { SHOWS } from './shows.constants';
 
 interface IShow {
   endTime?: string;
@@ -19,5 +20,5 @@ interface IShow {
   styleUrl: './shows.component.scss'
 })
 export class ShowsComponent {
-  shows: IShow[] = [];
+  shows: IShow[] = SHOWS;
 }

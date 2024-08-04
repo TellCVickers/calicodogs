@@ -4,6 +4,7 @@ import { BIO_CONTENT } from '../bio/bio-content.constants';
 import { Component } from '@angular/core';
 import { HammerModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
+import { ShowsComponent } from '../shows/shows.component';
 
 @Component({
   selector: 'app-press-kit',
@@ -12,7 +13,8 @@ import { HttpClientModule } from '@angular/common/http';
     Angular2ImageGalleryModule,
     CommonModule,
     HammerModule,
-    HttpClientModule
+    HttpClientModule,
+    ShowsComponent
   ],
   templateUrl: './press-kit.component.html',
   styleUrl: './press-kit.component.scss'
