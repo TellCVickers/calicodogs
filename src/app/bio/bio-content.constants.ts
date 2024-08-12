@@ -1,5 +1,5 @@
 export const BIO_CONTENT = `
-<p>Calico Dogs is what happens when four talented, long-time musicians and friends get together to see what they can cook up. Made up of drummer Brendan Beaver, guitarists Ian Cain and Evan Lybrand, and bassist Tell Vickers. The four bring together elements of blues, alternative, indie, and psychedelia into a genre-hopping blend of soundscapes and catchy hooks.</p>
+<p>Calico Dogs is what happens when four talented, long-time musicians and friends get together to see what they can cook up. Made up of drummer Brenden Beaver, guitarists Ian Cain and Evan Lybrand, and bassist Tell Vickers. The four bring together elements of blues, alternative, indie, and psychedelia into a genre-hopping blend of soundscapes and catchy hooks.</p>
 <p>Officially formed in 2024 as a passion project by songwriter and WYEP Artist of the Week, Evan Lybrand, the four have played together in various formations in bands for years. With decades of combined experience between the four, they weave together thoughtful and intricate melodies with steady, heartfelt rhythms all underneath lyrics, penned to highlight the sardonic melancholy of modern life.</p>
 <p>Calico Dogs released their new song, Wicker Chair, on June 28th, 2024 and is headed back to the studio in the near future in order to record more new music. Stay tuned!</p>
 `;
