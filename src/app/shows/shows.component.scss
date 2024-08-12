@@ -1,3 +1,37 @@
-.show-detail {
+@import '../../../node_modules/bootstrap/scss/bootstrap';
+@import '../../../node_modules/bootstrap/scss/variables';
+@import '../../../node_modules/bootstrap/scss/mixins';
+
+.show-list-item {
     list-style-type: none;
+}
+
+.show-grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    @include media-breakpoint-up(md) { 
+        grid-template-columns: 33% 67%;
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .show-image {
+        margin: 0 auto;
+        width: calc(200px + 2rem);
+
+        img {
+            width: 200px;
+            height: 200px;
+        }
+    }
+
+    .show-detail {
+        margin: auto;
+        padding-top: 1rem;
+
+        @include media-breakpoint-up(md) { 
+            padding-top: 0;
+        }
+    }
 }

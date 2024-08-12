@@ -6,6 +6,7 @@ interface IShow {
   endTime?: string;
   date: Date;
   doorTime?: string;
+  imageUrl?: string;
   location?: string;
   otherBands?: string;
   startTime: string;
@@ -22,4 +23,12 @@ interface IShow {
 })
 export class ShowsComponent {
   shows: IShow[] = SHOWS;
+
+  ngOnInit(): void {
+    this.shows.forEach((show) => {
+      if (!show.imageUrl) {
+        show.imageUrl = '/assets/calicoDogsLogo.jpg';
+      }
+    });
+  }
 }
