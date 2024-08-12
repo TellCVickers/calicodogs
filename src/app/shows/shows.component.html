@@ -6,6 +6,7 @@
         <span>{{show.date | date: 'MM/dd/yyyy'}}</span><br>
         <span>{{show.startTime}}</span><br>
         <span *ngIf="show.doorTime">Doors open at {{show.doorTime}}<br></span>
+        <span *ngIf="show.ticketLink">Tickets: <a [href]="show.ticketLink" target="_blank">{{show.ticketLink}}</a><br></span>
         <hr *ngIf="i !== shows.length - 1">
     </li>
 </ul>

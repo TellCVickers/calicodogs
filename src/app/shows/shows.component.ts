@@ -9,6 +9,7 @@ interface IShow {
   location?: string;
   otherBands?: string;
   startTime: string;
+  ticketLink?: string;
   venue: string;
 }
 
