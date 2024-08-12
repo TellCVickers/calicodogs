@@ -8,19 +8,27 @@
 
 .show-grid-container {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: auto;
 
-    @include media-breakpoint-up(md) { 
-        grid-template-columns: 33% 67%;
-        width: 60%;
+    @include media-breakpoint-up(lg) { 
+        grid-template-columns: auto auto;
         margin: 0 auto;
+    }
+
+    @include media-breakpoint-between(lg, xxl) {
+        width: 80%;
+    }
+    
+    @include media-breakpoint-up(xxl) { 
+        width: 60%;
     }
 
     .show-image {
         margin: 0 auto;
-        width: calc(200px + 2rem);
+        width: 200px;
 
         img {
+            padding: 1rem;
             width: 200px;
             height: 200px;
         }
@@ -28,7 +36,8 @@
 
     .show-detail {
         margin: auto;
-        padding-top: 1rem;
+        padding: 1rem;
+        word-break: break-word;
 
         @include media-breakpoint-up(md) { 
             padding-top: 0;
