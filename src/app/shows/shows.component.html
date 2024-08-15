@@ -1,5 +1,5 @@
-<ul *ngIf="shows.length">
-    <li *ngFor="let show of shows; let i = index;" class="show-list-item">
+<div *ngIf="shows.length">
+    <div *ngFor="let show of shows; let i = index;" class="show-list-item">
         <div class="show-grid-container">
             <div class="show-image">
                 <img [src]="show.imageUrl" />
@@ -15,7 +15,7 @@
             </div>
         </div>
         
-    </li>
-</ul>
+    </div>
+</div>
 <p *ngIf="!shows.length">More shows to be announced soon!</p>
 

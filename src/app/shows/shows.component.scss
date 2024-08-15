@@ -2,16 +2,12 @@
 @import '../../../node_modules/bootstrap/scss/variables';
 @import '../../../node_modules/bootstrap/scss/mixins';
 
-.show-list-item {
-    list-style-type: none;
-}
-
 .show-grid-container {
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 1fr;
 
     @include media-breakpoint-up(lg) { 
-        grid-template-columns: auto auto;
+        grid-template-columns: 1fr 1fr;
         margin: 0 auto;
     }
 
@@ -25,12 +21,12 @@
 
     .show-image {
         margin: 0 auto;
-        width: 200px;
+        width: 250px;
 
         img {
             padding: 1rem;
-            width: 200px;
-            height: 200px;
+            max-width: 250px;
+            max-height: 250px;
         }
     }
 

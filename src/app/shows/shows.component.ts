@@ -1,18 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { IShow } from './shows';
 import { SHOWS } from './shows.constants';
-
-interface IShow {
-  endTime?: string;
-  date: Date;
-  doorTime?: string;
-  imageUrl?: string;
-  location?: string;
-  otherBands?: string;
-  startTime: string;
-  ticketLink?: string;
-  venue: string;
-}
 
 @Component({
   selector: 'app-shows',
