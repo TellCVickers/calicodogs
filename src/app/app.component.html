@@ -1,7 +1,6 @@
 <div>
   <app-nav></app-nav>
-  <app-banner *ngIf="currentRoute !== '/press-kit'"></app-banner>
-  <div role="main" [ngClass]="{'main': currentRoute !== '/press-kit', 'epk': currentRoute === '/press-kit' }">
+  <div role="main" class="main">
     <router-outlet></router-outlet>
   </div>
   <footer>

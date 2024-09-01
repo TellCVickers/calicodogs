@@ -14,17 +14,8 @@
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" routerLink="/bio" routerLinkActive="active">Bio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" routerLink="/shows" routerLinkActive="active">Shows</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" routerLink="/press-kit" routerLinkActive="active">Press Kit</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" routerLink="/contact" routerLinkActive="active">Contact</a>
+                <li *ngFor="let link of navLinks" class="nav-item">
+                    <a class="nav-link" [ngClass]="currentRoute === link.linkId ? 'active' : ''" routerLink="." [fragment]="link.linkId" (click)="navigate()">{{ link.linkText }}</a>
                 </li>
             </ul>
         </div>

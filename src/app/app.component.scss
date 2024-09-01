@@ -15,16 +15,7 @@ footer {
 
 .main {
     margin: 0 auto;
-    padding: 2rem;
-    text-align: center;
-    width: 66%;
-
-    @include media-breakpoint-down(xl) { 
-        width: 100%;
-    }
-}
-
-.epk {
     padding: 0 0 2rem 0;
     text-align: center;
+    width: 100%; 
 }

@@ -5,6 +5,8 @@ import { Component } from '@angular/core';
 import { HammerModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { ShowsComponent } from '../shows/shows.component';
+import { BioComponent } from '../bio/bio.component';
+import { ContactComponent } from '../contact/contact.component';
 
 @Component({
   selector: 'app-press-kit',
@@ -14,6 +16,8 @@ import { ShowsComponent } from '../shows/shows.component';
     CommonModule,
     HammerModule,
     HttpClientModule,
+    BioComponent,
+    ContactComponent,
     ShowsComponent
   ],
   templateUrl: './press-kit.component.html',
