@@ -1,7 +1,8 @@
 import { CommonModule, DOCUMENT } from '@angular/common';
-import { Component, Inject } from '@angular/core';
+import { Component, HostListener, Inject } from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop'
 import { ActivatedRoute, RouterModule } from '@angular/router';
+import { isEqual } from 'lodash-es';
 
 interface INavLink {
   linkId: string;
@@ -16,7 +17,10 @@ interface INavLink {
   styleUrl: './nav.component.scss'
 })
 export class NavComponent {
+  private konamiCode = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'KeyB', 'KeyA'];
+
   currentRoute: string | null = '';
+  keypressList: string[] = [];
   navLinks: INavLink[] = [
     { linkId: 'home', linkText: 'Home' },
     { linkId: 'music', linkText: 'Music' },
@@ -25,6 +29,20 @@ export class NavComponent {
     { linkId: 'media', linkText: 'Media' },
     { linkId: 'contact', linkText: 'Contact' },
   ];
+  showCheatCodePupper = false;
+
+  @HostListener('window:keyup', ['$event'])
+  onKeyup(event: KeyboardEvent): void {
+    const keypressListLength = this.keypressList.push(event.code);
+
+    if (keypressListLength > this.konamiCode.length) {
+      this.keypressList.shift();
+    }
+
+    if (!this.showCheatCodePupper && isEqual(this.keypressList, this.konamiCode)) {
+      this.activateKonamiCode();
+    }
+  }
 
   constructor(
     @Inject(DOCUMENT) private document: Document,
@@ -43,6 +61,12 @@ export class NavComponent {
           }
         });
       });
+  }
+
+  activateKonamiCode(): void {
+    this.showCheatCodePupper = true;
+
+    new Audio('assets/levelup.mp3').play();
   }
 
   navigate(): void {
