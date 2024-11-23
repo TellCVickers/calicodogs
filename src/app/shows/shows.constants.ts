@@ -1,12 +1,13 @@
 import { IShow } from "./shows";
 
-export const SHOWS: IShow[] = [/*
+export const SHOWS: IShow[] = [
     {
-        date: new Date(2024, 8, 7),
-        location: "3312 Evergreen Road, Pittsburgh, PA 15237",
-        startTime: "3pm",
-        imageUrl: "https://files.seatengine.com/talent/headshots/photos/67493/full/data",
-        ticketLink: "https://www.sunkenbus.com/shows/276082",
-        venue: "Red Caiman and Sunken Bus Studios"
+        date: new Date(2024, 11, 30),
+        location: "2809 Penn Ave, Pittsburgh, PA 15222",
+        doorTime: "7pm",
+        startTime: "8pm",
+        imageUrl: "https://events.pittsburghwinery.com/wp-content/uploads/2024/11/etix-Clunkers_958791731956376.jfif",
+        ticketLink: "https://www.etix.com/ticket/p/64725957/clunkers-friends-wspecial-guests-calico-dogs-pittsburgh-the-original-pittsburgh-winery",
+        venue: "The Original Pittsburgh Winery"
     }
-*/];
+];
