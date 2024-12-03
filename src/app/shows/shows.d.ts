@@ -5,6 +5,7 @@ export interface IShow {
     imageUrl?: string;
     location?: string;
     otherBands?: string;
+    supporting?: string;
     startTime: string;
     ticketLink?: string;
     venue: string;
