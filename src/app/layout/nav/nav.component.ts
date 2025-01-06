@@ -1,5 +1,5 @@
 import { CommonModule, DOCUMENT } from '@angular/common';
-import { Component, HostListener, Inject } from '@angular/core';
+import { Component, HostListener, Inject, Input, OnDestroy } from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop'
 import { ActivatedRoute, RouterModule } from '@angular/router';
 import { isEqual } from 'lodash-es';
@@ -16,7 +16,7 @@ interface INavLink {
   templateUrl: './nav.component.html',
   styleUrl: './nav.component.scss'
 })
-export class NavComponent {
+export class NavComponent implements OnDestroy {
   private konamiCode = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'KeyB', 'KeyA'];
 
   currentRoute: string | null = '';
@@ -30,6 +30,8 @@ export class NavComponent {
     { linkId: 'contact', linkText: 'Contact' },
   ];
   showCheatCodePupper = false;
+
+  @Input() showHotDogStand = false;
 
   @HostListener('window:keyup', ['$event'])
   onKeyup(event: KeyboardEvent): void {
@@ -61,6 +63,10 @@ export class NavComponent {
           }
         });
       });
+  }
+
+  ngOnDestroy(): void {
+    window.removeEventListener('keyup', this.onKeyup);
   }
 
   activateKonamiCode(): void {

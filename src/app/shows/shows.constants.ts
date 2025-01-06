@@ -1,6 +1,7 @@
 import { IShow } from "./shows";
 
 export const SHOWS: IShow[] = [
+    /*
     {
         date: new Date(2024, 11, 30),
         location: "2809 Penn Ave, Pittsburgh, PA 15222",
@@ -11,4 +12,5 @@ export const SHOWS: IShow[] = [
         ticketLink: "https://www.etix.com/ticket/p/64725957/clunkers-friends-wspecial-guests-calico-dogs-pittsburgh-the-original-pittsburgh-winery",
         venue: "The Original Pittsburgh Winery"
     }
+    */
 ];

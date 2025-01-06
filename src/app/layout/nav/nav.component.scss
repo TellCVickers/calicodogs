@@ -29,6 +29,14 @@
     top: 0;
     width: 100%;
     z-index: 1;
+
+    &.hot-dog-stand{
+        background-color: red !important;
+
+        li.nav-item a {
+            color: yellow !important;
+        }
+    }
 }
 
 @include media-breakpoint-down(lg) { 
