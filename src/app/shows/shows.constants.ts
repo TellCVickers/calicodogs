@@ -16,7 +16,7 @@ export const SHOWS: IShow[] = [
    {
         date: new Date(2025, 4, 17),
         location: '2 Sedgwick St, Pittsburgh, PA 15209',
-        startTime: '4pm',
+        startTime: '5pm',
         imageUrl: 'https://static.wixstatic.com/media/7ad06a_239d8c3579a54e3eaef9ce2e85c4be3c~mv2.png/v1/fill/w_729,h_464,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/25-MMF-Website-Top-Image.png',
         venue: "Millvale Music Festival | Playground Dropout"
    },
