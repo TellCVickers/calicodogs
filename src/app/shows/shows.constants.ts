@@ -1,7 +1,7 @@
 import { IShow } from "./shows";
 
 export const SHOWS: IShow[] = [
-    /*
+    /* USE ME AS A TEMPLATE DADDY
     {
         date: new Date(2024, 11, 30),
         location: "2809 Penn Ave, Pittsburgh, PA 15222",
@@ -13,13 +13,6 @@ export const SHOWS: IShow[] = [
         venue: "The Original Pittsburgh Winery"
     }
     */
-   {
-        date: new Date(2025, 5, 8),
-        location: '15th Street Plaza @ Waterfront Place',
-        startTime: '2pm',
-        imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKAUO-D-LgWOw9Vtb5e3mMeRsh3qp7nhhaJg&s',
-        venue: "Three Rivers Arts Festival | Dollar Bank Main Stage @ The Strip District"
-   },
    {
         date: new Date(2025, 6, 18),
         location: '510 E Ohio St, Pittsburgh, PA 15212',
