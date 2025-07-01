@@ -1,4 +1,3 @@
-import { CommonModule } from '@angular/common';
 import { BIO_CONTENT } from '../bio/bio-content.constants';
 import { Component } from '@angular/core';
 import { ShowsComponent } from '../shows/shows.component';
@@ -8,11 +7,10 @@ import { ContactComponent } from '../contact/contact.component';
 @Component({
     selector: 'app-press-kit',
     imports: [
-        CommonModule,
-        BioComponent,
-        ContactComponent,
-        ShowsComponent
-    ],
+    BioComponent,
+    ContactComponent,
+    ShowsComponent
+],
     templateUrl: './press-kit.component.html',
     styleUrl: './press-kit.component.scss'
 })

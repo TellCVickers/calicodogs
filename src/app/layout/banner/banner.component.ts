@@ -1,12 +1,12 @@
 import { BIO_BANNER, CONTACT_BANNER, MEDIA_BANNER, SHOWS_BANNER } from './banner.constants';
 import { Component, OnInit } from '@angular/core';
 import { IBannerData } from './banner';
-import { CommonModule, Location } from '@angular/common';
+import { Location } from '@angular/common';
 import { NavigationEnd, Router } from '@angular/router';
 
 @Component({
     selector: 'app-banner',
-    imports: [CommonModule],
+    imports: [],
     templateUrl: './banner.component.html',
     styleUrl: './banner.component.scss'
 })

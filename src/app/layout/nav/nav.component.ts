@@ -1,5 +1,5 @@
-import { CommonModule, DOCUMENT } from '@angular/common';
-import { Component, HostListener, Inject, Input, OnDestroy } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component, HostListener, Inject, Input, OnDestroy, DOCUMENT } from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop'
 import { ActivatedRoute, RouterModule } from '@angular/router';
 import { isEqual } from 'lodash-es';

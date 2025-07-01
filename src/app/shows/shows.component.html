@@ -1,21 +1,39 @@
-<div *ngIf="shows.length">
-    <div *ngFor="let show of shows; let i = index;" class="show-list-item">
+@if (shows.length) {
+  <div>
+    @for (show of shows; track show; let i = $index) {
+      <div class="show-list-item">
         <div class="show-grid-container">
-            <div class="show-image">
-                <img [src]="show.imageUrl" />
-            </div>
-            <div class="show-detail">
-                <strong>{{show.venue}}</strong><br>
-                <span *ngIf="show.location" style="white-space: pre-line">{{show.location}}<br></span>
-                <span *ngIf="show.supporting">Supporting: {{show.supporting}}<br></span>
-                <span *ngIf="show.otherBands">With: {{show.otherBands}}<br></span>
-                <span>{{show.date | date: 'MM/dd/yyyy'}} | {{show.startTime}}</span><br>
-                <span *ngIf="show.doorTime">Doors open at {{show.doorTime}}<br></span>
-                <span *ngIf="show.ticketLink">Tickets: <a [href]="show.ticketLink" target="_blank">{{show.ticketLink}}</a><br></span>
-            </div>
+          <div class="show-image">
+            <img [src]="show.imageUrl" />
+          </div>
+          <div class="show-detail">
+            <strong>{{show.venue}}</strong><br>
+            @if (show.location) {
+              <span style="white-space: pre-line">{{show.location}}<br></span>
+            }
+            @if (show.supporting) {
+              <span>Supporting: {{show.supporting}}<br></span>
+            }
+            @if (show.otherBands) {
+              <span>With: {{show.otherBands}}<br></span>
+            }
+            <span>{{show.date | date: 'MM/dd/yyyy'}} | {{show.startTime}}</span><br>
+            @if (show.doorTime) {
+              <span>Doors open at {{show.doorTime}}<br></span>
+            }
+            @if (show.ticketLink) {
+              <span>Tickets: <a [href]="show.ticketLink" target="_blank">{{show.ticketLink}}</a><br></span>
+            }
+          </div>
         </div>
-        <hr *ngIf="i !== shows.length - 1" class="show-divider">
-    </div>
-</div>
-<p *ngIf="!shows.length">More shows to be announced soon!</p>
+        @if (i !== shows.length - 1) {
+          <hr class="show-divider">
+        }
+      </div>
+    }
+  </div>
+}
+@else {
+  <p>More shows to be announced soon!</p>
+}
 
