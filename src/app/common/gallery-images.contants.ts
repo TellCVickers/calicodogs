@@ -1,0 +1,28 @@
+import { GalleryItem, GalleryItemTypes, ImageItem } from "ng-gallery";
+
+export const GALLERY_IMAGES: GalleryItem[] = [
+    new ImageItem({ src: 'assets/img/gallery/2-21 PM_TLP_9103-C1E.jpeg' }),
+    new ImageItem({ src: 'assets/img/gallery/2-28 PM_TLP_9136-C1E.jpeg' }),
+    new ImageItem({ src: 'assets/img/gallery/2-30 PM_TLP_9202-C1E.jpeg' }),
+    new ImageItem({ src: 'assets/img/gallery/2-32 PM_TLP_9274-C1E.jpeg' }),
+    new ImageItem({ src: 'assets/img/gallery/2-33 PM_TLP_9290-C1E.jpeg' }),
+    new ImageItem({ src: 'assets/img/gallery/2-36 PM_TLP_9333-C1E.jpeg' }),
+    new ImageItem({ src: 'assets/img/gallery/2-38 PM_TLP_9362-C1E.jpeg' }),
+    new ImageItem({ src: 'assets/img/gallery/2-39 PM_TLP_9365-C1E.jpeg' }),
+    new ImageItem({ src: 'assets/img/gallery/8-12PM_TLP_3553-C1E.jpg' }),
+    new ImageItem({ src: 'assets/img/gallery/8-15PM_TLP_3648-C1E.jpg' }),
+    new ImageItem({ src: 'assets/img/gallery/8-17PM_TLP_3685-C1E.jpg' }),
+    new ImageItem({ src: 'assets/img/gallery/8-31PM_TLP_4171-C1E.jpg' }),
+    new ImageItem({ src: 'assets/img/gallery/432942475_7000183760081043_120898211605636196_n.jpg' }),
+    new ImageItem({ src: 'assets/img/gallery/TLP_0246.jpg' }),
+    new ImageItem({ src: 'assets/img/gallery/TLP_0370.jpg' }),
+    new ImageItem({ src: 'assets/img/gallery/TLP_0548.jpg' }),
+    new ImageItem({ src: 'assets/img/gallery/TLP_0633.jpg' }),
+    new ImageItem({ src: 'assets/img/gallery/TLP_0676.jpg' }),
+    new ImageItem({ src: 'assets/img/gallery/TLP_5554-C1E.jpg' }),
+    new ImageItem({ src: 'assets/img/gallery/TLP_5897-C1E.jpg' }),
+    new ImageItem({ src: 'assets/img/gallery/TLP_6081-C1E.jpg' }),
+    new ImageItem({ src: 'assets/img/gallery/TLP_6107-C1E.jpg' }),
+    new ImageItem({ src: 'assets/img/gallery/TLP_6494-C1E.jpg' }),
+    new ImageItem({ src: 'assets/img/gallery/TLP_6510-C1E.jpg' }),
+];
