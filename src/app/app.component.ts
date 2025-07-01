@@ -1,4 +1,3 @@
-import { BannerComponent } from './layout/banner/banner.component';
 import { CommonModule } from '@angular/common';
 import { Component, HostListener, OnDestroy } from '@angular/core';
 import { NavComponent } from './layout/nav/nav.component';
@@ -7,11 +6,10 @@ import { isEqual } from 'lodash-es';
 
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [BannerComponent, CommonModule, NavComponent, RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+    selector: 'app-root',
+    imports: [CommonModule, NavComponent, RouterOutlet],
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.scss'
 })
 export class AppComponent implements OnDestroy {
   private hotDogStandCode = ['KeyH', 'KeyO', 'KeyT', 'KeyD', 'KeyO', 'KeyG', 'KeyS', 'KeyT', 'KeyA', 'KeyN', 'KeyD'];

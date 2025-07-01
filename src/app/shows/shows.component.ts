@@ -4,11 +4,10 @@ import { IShow } from './shows';
 import { SHOWS } from './shows.constants';
 
 @Component({
-  selector: 'app-shows',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './shows.component.html',
-  styleUrl: './shows.component.scss'
+    selector: 'app-shows',
+    imports: [CommonModule],
+    templateUrl: './shows.component.html',
+    styleUrl: './shows.component.scss'
 })
 export class ShowsComponent {
   shows: IShow[] = SHOWS;

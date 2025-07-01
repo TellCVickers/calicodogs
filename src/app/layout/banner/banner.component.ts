@@ -5,11 +5,10 @@ import { CommonModule, Location } from '@angular/common';
 import { NavigationEnd, Router } from '@angular/router';
 
 @Component({
-  selector: 'app-banner',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './banner.component.html',
-  styleUrl: './banner.component.scss'
+    selector: 'app-banner',
+    imports: [CommonModule],
+    templateUrl: './banner.component.html',
+    styleUrl: './banner.component.scss'
 })
 export class BannerComponent implements OnInit {
   activeBanner: IBannerData = {};

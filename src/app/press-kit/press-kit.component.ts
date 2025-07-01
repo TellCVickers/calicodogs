@@ -6,16 +6,15 @@ import { BioComponent } from '../bio/bio.component';
 import { ContactComponent } from '../contact/contact.component';
 
 @Component({
-  selector: 'app-press-kit',
-  standalone: true,
-  imports: [
-    CommonModule,
-    BioComponent,
-    ContactComponent,
-    ShowsComponent
-  ],
-  templateUrl: './press-kit.component.html',
-  styleUrl: './press-kit.component.scss'
+    selector: 'app-press-kit',
+    imports: [
+        CommonModule,
+        BioComponent,
+        ContactComponent,
+        ShowsComponent
+    ],
+    templateUrl: './press-kit.component.html',
+    styleUrl: './press-kit.component.scss'
 })
 export class PressKitComponent {
   bioContent = BIO_CONTENT;

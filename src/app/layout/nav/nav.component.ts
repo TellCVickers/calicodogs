@@ -10,11 +10,10 @@ interface INavLink {
 };
 
 @Component({
-  selector: 'app-nav',
-  standalone: true,
-  imports: [CommonModule, RouterModule],
-  templateUrl: './nav.component.html',
-  styleUrl: './nav.component.scss'
+    selector: 'app-nav',
+    imports: [CommonModule, RouterModule],
+    templateUrl: './nav.component.html',
+    styleUrl: './nav.component.scss'
 })
 export class NavComponent implements OnDestroy {
   private konamiCode = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'KeyB', 'KeyA'];
