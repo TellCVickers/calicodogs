@@ -1,0 +1,17 @@
+footer {
+    padding-bottom: 1rem;
+    text-align: center;
+    width: 100%;
+
+    .logos {
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        margin-bottom: 1rem;
+
+        .social-logo { 
+            height: 3rem;
+            
+        }
+    }
+}

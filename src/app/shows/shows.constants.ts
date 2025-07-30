@@ -13,11 +13,4 @@ export const SHOWS: IShow[] = [
         venue: "The Original Pittsburgh Winery"
     }
     */
-   {
-        date: new Date(2025, 6, 18),
-        location: '510 E Ohio St, Pittsburgh, PA 15212',
-        startTime: '6pm',
-        imageUrl: 'https://i0.wp.com/www.northsidemusicfestival.com/wp-content/uploads/2025/05/2025-graphic_web.png?resize=1080%2C943&ssl=1',
-        venue: "Northside Music Festival | Allegheny City Brewing Outdoor Stage"
-   }
 ];

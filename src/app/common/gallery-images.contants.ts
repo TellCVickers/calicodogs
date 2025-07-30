@@ -1,4 +1,4 @@
-import { GalleryItem, GalleryItemTypes, ImageItem } from "ng-gallery";
+import { GalleryItem, ImageItem } from "ng-gallery";
 
 export const GALLERY_IMAGES: GalleryItem[] = [
     new ImageItem({ src: 'assets/img/gallery/2-21 PM_TLP_9103-C1E.jpeg' }),

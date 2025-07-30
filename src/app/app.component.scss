@@ -2,17 +2,6 @@
 @import '../../node_modules/bootstrap/scss/variables';
 @import '../../node_modules/bootstrap/scss/mixins';
 
-footer {
-    padding-bottom: 1rem;
-    text-align: center;
-    width: 100%;
-
-    .social-logo { 
-        margin-bottom: 1rem;
-        width: 3rem;
-    }
-}
-
 div.hot-dog-stand * {
     background-color: red;
     color: yellow;

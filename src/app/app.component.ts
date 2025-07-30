@@ -3,18 +3,18 @@ import { Component, HostListener, OnDestroy } from '@angular/core';
 import { NavComponent } from './layout/nav/nav.component';
 import { RouterOutlet } from '@angular/router';
 import { isEqual } from 'lodash-es';
+import { FooterComponent } from './layout/footer/footer.component';
 
 
 @Component({
     selector: 'app-root',
-    imports: [CommonModule, NavComponent, RouterOutlet],
+    imports: [CommonModule, FooterComponent, NavComponent, RouterOutlet],
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss'
 })
 export class AppComponent implements OnDestroy {
   private hotDogStandCode = ['KeyH', 'KeyO', 'KeyT', 'KeyD', 'KeyO', 'KeyG', 'KeyS', 'KeyT', 'KeyA', 'KeyN', 'KeyD'];
 
-  currentYear = new Date().getFullYear();
   keypressList: string[] = [];
   showHotDogStand = false;
   title = 'Calico Dogs';
