@@ -1,5 +1,5 @@
 export const BIO_CONTENT = `
 <p>Calico Dogs is the result of four seasoned musicians and close friends coming together to create something special. The band features drummer Brenden Beaver, guitarists Ian Cain and Evan Lybrand, and bassist Tell Vickers, who together blend elements of blues, alternative, indie, and psychedelia into a unique and dynamic sound.</p>
 <p>Formed in 2024 as a passion project by Evan Lybrand, a songwriter and WYEP Artist of the Week, Calico Dogs brings a fresh perspective to the Pittsburgh music scene. Drawing from their extensive experience, the band members craft a sonic landscape that resonates with authenticity. Their sound captures the essence of modern life, blending thoughtful lyrics with a genre-hopping approach that keeps listeners engaged and coming back for more.</p>
-<p>Their latest single, "Karma", was released on June 27th, 2025, with more singles to follow later in 2025. Stay tuned for what's next! </p>
+<p>Their latest single, "Small Towns", was released on August 29th, 2025, with more singles to follow later in 2025. Stay tuned for what's next! </p>
 `;
