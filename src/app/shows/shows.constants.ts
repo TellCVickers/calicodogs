@@ -13,4 +13,14 @@ export const SHOWS: IShow[] = [
         venue: "The Original Pittsburgh Winery"
     }
     */
+   {
+        date: new Date(2025, 10, 8),
+        location: "715 East St, Pittsburgh, PA 15212",
+        startTime: "8pm",
+        supporting: "Sachem Orenda",
+        otherBands: "Love Dumpster",
+        imageUrl: "https://cdn.prod.website-files.com/5d2f3bec2dd0fa00b6ada10d/68f28e01b3ae07c34f064288_lovedumpy.jpeg",
+        ticketLink: "https://events.humanitix.com/love-dumpster-calico-dogs-sachem-orenda",
+        venue: "The Government Center"
+    }
 ];
