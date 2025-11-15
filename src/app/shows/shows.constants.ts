@@ -14,12 +14,13 @@ export const SHOWS: IShow[] = [
     }
     */
    {
-        date: new Date(2025, 10, 8),
-        location: "715 East St, Pittsburgh, PA 15212",
+        date: new Date(2025, 10, 29),
+        location: "2809 Penn Ave, Pittsburgh, PA 15222",
+        doorTime: "7pm",
         startTime: "8pm",
-        otherBands: "Sachem Orenda and Love Dumpster",
-        imageUrl: "https://cdn.prod.website-files.com/5d2f3bec2dd0fa00b6ada10d/68f28e01b3ae07c34f064288_lovedumpy.jpeg",
-        ticketLink: "https://events.humanitix.com/love-dumpster-calico-dogs-sachem-orenda",
-        venue: "The Government Center"
+        otherBands: "Bonnie & The Mere Mortals & Kelly McCafferty",
+        imageUrl: "https://pittsburghwinery.com/wp-content/uploads/2025/11/etix-Calico_3031081762879739.jfif",
+        ticketLink: "https://www.etix.com/ticket/p/64623308/calico-dogs-wbonnie-the-mere-mortals-kelly-mccafferty-pittsburgh-the-original-pittsburgh-winery",
+        venue: "The Original Pittsburgh Winery"
     }
 ];
